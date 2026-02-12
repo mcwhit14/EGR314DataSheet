@@ -2,57 +2,83 @@
 title: Component Selection Example
 ---
 
-## Examples
-
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
-
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
 
 ### Style 2
 
 > Also acceptable, more markdown friendly
 
-**External Clock Module**
+**External Distance Module**
 
-1. XC1259TR-ND surface mount crystal
+1. Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm - STEMMA QT / Qwiic
 
     ![](image1.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $14.95/each
+    * [link to product](https://www.adafruit.com/product/5425?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvSl8RUK5UpuGQcb53-oEMddy&gclid=Cj0KCQiA-YvMBhDtARIsAHZuUzJpbgO8iYHooJXRqa52AmxdyV115lKm72l8DtRN0tQkdX5DKgdkqPMaAj8PEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Inexpensive                               | Daughter Board |
+    | Long Range(Up to 6m)                    |real world range depeds on reflectivity and ambiant light                                        |
+    |  |
 
-1. CTX936TR-ND surface mount oscillator
+2. Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm - STEMMA QT / Qwiic
 
     ![](image3.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $14.95/each
+    * [Link to product](https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvQBEa_pZJ0CxJy2nNGHELEVm&gclid=EAIaIQobChMIj6OwhJTSkgMVZQbvAh11ji6SEAQYASABEgJPGvD_BwE)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Used commonly                                      | shorter max range then LC4CX      |
+    | still long range                               | Daughter board |
+    | |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+3. Adafruit VL53L4CXV0DH/1 
+
+    ![](image3.png)
+
+    * $14.95/each
+    * [Link to product](https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvQBEa_pZJ0CxJy2nNGHELEVm&gclid=EAIaIQobChMIj6OwhJTSkgMVZQbvAh11ji6SEAQYASABEgJPGvD_BwE)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | smallest footprint                                    | too small to hand solder    |
+    | lowest cost                               | needs careful alignment and mechanical design |
+    |no daughter board |
+
+**Choice:** Option 1:Adafruit VL53L4CX Time of Flight Distance Sensor
+
+**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+
+
+1. PIC18F47Q10
+
+    ![](image3.png)
+
+    * $10.19/each
+    * [Link to product](https://www.microchip.com/en-us/product/pic18f47q10)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | No background Wifi stacks                                    | MPlab debugging workflow can be slow    |
+    |Predictable                           | Toolchain issues |
+    | Lower Power consumption|
+
+2. ESP32
+
+    ![](image3.png)
+
+    * $14.95/each
+    * [Link to product](https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvQBEa_pZJ0CxJy2nNGHELEVm&gclid=EAIaIQobChMIj6OwhJTSkgMVZQbvAh11ji6SEAQYASABEgJPGvD_BwE)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | Arduino Libraries available                                    | Complicates power budget   |
+    | Immediate print debugging                              | Background tasks can affect timing  |
+    |less intergration mismatch |
+
+**Choice:** Option 1: ESP32
 
 **Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
