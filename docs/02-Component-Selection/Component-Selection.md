@@ -3,7 +3,7 @@ title: Component Selection Example
 ---
 
 
-### Style 2
+
 
 > Also acceptable, more markdown friendly
 
@@ -11,8 +11,9 @@ title: Component Selection Example
 
 1. Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm - STEMMA QT / Qwiic
 
-    ![](<img width="480" height="485" alt="image" src="https://github.com/user-attachments/assets/46bf3807-8ccc-4e6e-8e09-fc0a8359070f" />
-)
+    <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/96248d9a-5fbc-45e0-924d-eeb529f820fb" />
+
+
 
     * $14.95/each
     * [link to product](https://www.adafruit.com/product/5425?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvSl8RUK5UpuGQcb53-oEMddy&gclid=Cj0KCQiA-YvMBhDtARIsAHZuUzJpbgO8iYHooJXRqa52AmxdyV115lKm72l8DtRN0tQkdX5DKgdkqPMaAj8PEALw_wcB)
@@ -25,7 +26,8 @@ title: Component Selection Example
 
 2. Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm - STEMMA QT / Qwiic
 
-    ![](image3.png)
+    <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/9a353150-5ba1-4fb3-99b4-82b0fd4ead4d" />
+
 
     * $14.95/each
     * [Link to product](https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvQBEa_pZJ0CxJy2nNGHELEVm&gclid=EAIaIQobChMIj6OwhJTSkgMVZQbvAh11ji6SEAQYASABEgJPGvD_BwE)
@@ -38,7 +40,8 @@ title: Component Selection Example
 
 3. Adafruit VL53L4CXV0DH/1 
 
-    ![](image3.png)
+    <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/b6fe0b91-b8c7-49f9-90b6-3178749d2126" />
+
 
     * $14.95/each
     * [Link to product](https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvQBEa_pZJ0CxJy2nNGHELEVm&gclid=EAIaIQobChMIj6OwhJTSkgMVZQbvAh11ji6SEAQYASABEgJPGvD_BwE)
@@ -58,7 +61,8 @@ title: Component Selection Example
 
 1. PIC18F47Q10
 
-    ![](image3.png)
+    <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/870d37ca-f655-454a-a791-889ae48e59de" />
+
 
     * $10.19/each
     * [Link to product](https://www.microchip.com/en-us/product/pic18f47q10)
@@ -71,7 +75,8 @@ title: Component Selection Example
 
 2. ESP32
 
-    ![](image3.png)
+    <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/08714d44-a9f6-47a7-8222-d4398bd53f4d" />
+
 
     * $14.95/each
     * [Link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-DEVKITC-32UE/12091813?gclsrc=aw.ds&gad_source=4&gad_campaignid=20243136172&gbraid=0AAAAADrbLljmLZc8BiWTA5yG0T-yNVJ6B&gclid=EAIaIQobChMItNWL-IzTkgMVuzdECB2H0gLgEAQYBiABEgLFLfD_BwE)
@@ -102,7 +107,8 @@ title: Component Selection Example
 
 2. Share 5V rail and local buck converter to 3.3V with LM2575T
 
-    ![](image3.png)
+    <img width="480" height="485" alt="image" src="https://github.com/user-attachments/assets/6ca98087-0d5e-4941-867a-b27761612e1b" />
+
 
     * $1.92/each
     * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2575T-5.0-NOPB/108660?gclsrc=aw.ds&gad_source=4&gad_campaignid=17338792030&gbraid=0AAAAADrbLlhqbShfo1S6gTZvX0YYw1fR2&gclid=EAIaIQobChMI7M21zJ7TkgMVJCFECB2nygTmEAQYASABEgIB0PD_BwE)
@@ -115,7 +121,8 @@ title: Component Selection Example
 
 3. Independent power using MB102 breadboard power module
 
-    ![](image3.png)
+    <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/2cf30ffe-6687-4732-9e57-6f000fb4ae00" />
+
 
     * $5.56/each
     * [Link to product](https://www.digikey.com/en/products/detail/bud-industries/BBP-32701/8602382?gclsrc=aw.ds&gad_source=4&gad_campaignid=20243136172&gbraid=0AAAAADrbLljmLZc8BiWTA5yG0T-yNVJ6B&gclid=EAIaIQobChMIpZ6UqJ7TkgMVMD5ECB0N1hIQEAQYASABEgJTt_D_BwE)
