@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#component-selection" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -527,6 +532,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection Example
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -537,6 +555,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#final-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-justification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Justification
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -807,6 +862,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#final-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-justification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Justification
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -828,8 +911,6 @@
   
   
 
-
-  <h1>Component Selection Example</h1>
 
 <blockquote>
 <p>Also acceptable, more markdown friendly</p>
@@ -1082,8 +1163,44 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 1: ESP32</p>
+<p><strong>Choice:</strong> Option 1: Share 5V rail and local buck converter to 3.3V with LM2575T</p>
 <p><strong>Rationale:</strong> I choose to use a shared 5V supply with a local 3.3V regulator on the distance sensor subsystem. This minimizes the system wiring complexity while providing clean stable power for the ESP32 and ToF Sensor</p>
+<h1 id="component-selection">Component Selection</h1>
+<h2 id="final-components">Final Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Part</th>
+<th>Reason for Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontroller</td>
+<td>ESP32 DevKit DOIT V1</td>
+<td>High performance, built-in communication, easy development</td>
+</tr>
+<tr>
+<td>Distance Sensor</td>
+<td>VL53L4CX</td>
+<td>High accuracy, long range, I2C interface</td>
+</tr>
+<tr>
+<td>Power Supply</td>
+<td>3.3V regulated</td>
+<td>Compatible with ESP32 and sensor</td>
+</tr>
+<tr>
+<td>Communication</td>
+<td>UART</td>
+<td>Simple and reliable for system integration</td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-justification">Design Justification</h2>
+<p>The ESP32 was selected due to its ability to handle both real-time sensor processing and communication simultaneously. The VL53L4CX provides accurate distance measurements critical for obstacle detection.</p>
+<p>The combination ensures a balance between performance, cost, and ease of integration.</p>
 
 
 
