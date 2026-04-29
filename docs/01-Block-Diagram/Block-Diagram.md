@@ -13,7 +13,9 @@ The distance sensing subsystem detects nearby obstacles using the VL53L4CX time 
 
 
 ## Block Diagram 
+<img width="756" height="806" alt="314_IndividualBlock (1)" src="https://github.com/user-attachments/assets/97488dbe-c699-4617-adf4-4e01033c2d67" />
 
 
- <img width="494" height="524" alt="image" src="https://github.com/user-attachments/assets/4380a51f-03d1-4494-946c-f02b2dd62cfa" />
+
+ 
 
