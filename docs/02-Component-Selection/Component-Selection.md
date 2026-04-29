@@ -136,8 +136,24 @@ title: Component Selection Example
 
 
 
-**Choice:** Option 1: ESP32
+**Choice:** Option 1: Share 5V rail and local buck converter to 3.3V with LM2575T
 
 **Rationale:** I choose to use a shared 5V supply with a local 3.3V regulator on the distance sensor subsystem. This minimizes the system wiring complexity while providing clean stable power for the ESP32 and ToF Sensor
 
+
+# Component Selection
+
+## Final Components
+
+| Component | Part | Reason for Selection |
+|----------|------|--------------------|
+| Microcontroller | ESP32 DevKit DOIT V1 | High performance, built-in communication, easy development |
+| Distance Sensor | VL53L4CX | High accuracy, long range, I2C interface |
+| Power Supply | 3.3V regulated | Compatible with ESP32 and sensor |
+| Communication | UART | Simple and reliable for system integration |
+
+## Design Justification
+The ESP32 was selected due to its ability to handle both real-time sensor processing and communication simultaneously. The VL53L4CX provides accurate distance measurements critical for obstacle detection.
+
+The combination ensures a balance between performance, cost, and ease of integration.
 
