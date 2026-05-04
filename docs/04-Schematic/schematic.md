@@ -15,4 +15,4 @@ This schematic shows the 9V input being stepped down to 3.3V. The ESP32 reads di
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](SchematicPic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
