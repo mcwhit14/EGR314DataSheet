@@ -24,7 +24,7 @@
 
     
       
-        <title>PCBDesign - EGR 304 Data Sheet Template</title>
+        <title>PCB Design - EGR 304 Data Sheet Template</title>
       
     
     
@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pcb-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -118,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PCBDesign
+              PCB Design
             
           </span>
         </div>
@@ -831,16 +836,120 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PCB Design
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    PCBDesign
+    PCB Design
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-layout-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Layout Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Layout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Debugging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -871,6 +980,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-layout-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Layout Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Layout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Debugging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -893,9 +1084,71 @@
   
 
 
-  <h1>PCBDesign</h1>
-
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/0605b0eb-61a7-427c-abe5-ae6494816043" data-desc-position="bottom"><img width="619" height="532" alt="image" src="https://github.com/user-attachments/assets/0605b0eb-61a7-427c-abe5-ae6494816043"></a></p>
+<h1 id="pcb-design">PCB Design</h1>
+<h2 id="overview">Overview</h2>
+<p>The PCB was designed to support the ESP32 microcontroller and integrate the subsystem’s sensor and communication components into a compact and reliable hardware platform. The goal was to transition from a breadboard prototype to a fully functional printed circuit board.</p>
+<h2 id="pcb-layout-image">PCB Layout Image</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/03d4f0ae-5a9d-43b2-b65e-c3ad2017fd6a" data-desc-position="bottom"><img width="611" height="524" alt="image" src="https://github.com/user-attachments/assets/03d4f0ae-5a9d-43b2-b65e-c3ad2017fd6a"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/64c05da7-3f23-4f25-adb4-8b0348395d17" data-desc-position="bottom"><img width="617" height="526" alt="image" src="https://github.com/user-attachments/assets/64c05da7-3f23-4f25-adb4-8b0348395d17"></a></p>
+<hr>
+<h2 id="design-process">Design Process</h2>
+<p>The schematic and PCB layout were created using KiCad. The design included:</p>
+<ul>
+<li>ESP32 module footprint</li>
+<li>Sensor connections (I2C interface)</li>
+<li>Power regulation components</li>
+<li>UART communication pins</li>
+<li>Required resistors and capacitors</li>
+</ul>
+<p>Special attention was given to correct pin mapping, component placement, and routing to ensure reliable operation.</p>
+<hr>
+<h2 id="power-design">Power Design</h2>
+<p>The board was powered from a shared system supply and locally regulated to 5V and 3.3V as required.</p>
+<p>Key considerations included:</p>
+<ul>
+<li>Stable voltage supply to the ESP32 and sensor</li>
+<li>Proper placement of decoupling capacitors</li>
+<li>Sufficient trace width for power lines</li>
+</ul>
+<p>Power stability was critical during testing and required careful debugging.</p>
+<hr>
+<h2 id="pcb-layout">PCB Layout</h2>
+<p>The PCB was designed as a two-layer board with:</p>
+<ul>
+<li>A ground plane for improved stability</li>
+<li>Short and efficient signal routing</li>
+<li>Separation of power and signal paths where possible</li>
+</ul>
+<p>Component placement was optimized to simplify routing and reduce interference.</p>
+<hr>
+<h2 id="challenges">Challenges</h2>
+<p>Several challenges were encountered during the PCB design and bring-up process:</p>
+<ul>
+<li>Incorrect pin mappings between the ESP32 and sensor</li>
+<li>I2C communication issues due to missing or incorrect pull-up resistors</li>
+<li>Power instability affecting sensor performance</li>
+<li>Initial layout decisions requiring revision after testing</li>
+</ul>
+<p>These issues required iterative debugging across both hardware and firmware.</p>
+<hr>
+<h2 id="testing-and-debugging">Testing and Debugging</h2>
+<p>After fabrication, the board was tested through a series of steps:</p>
+<ul>
+<li>Verifying power rails (3.3V and 5V)</li>
+<li>Confirming ESP32 functionality and successful flashing</li>
+<li>Testing sensor detection and data output</li>
+<li>Debugging communication issues</li>
+</ul>
+<p>Testing revealed the importance of validating both electrical connections and software configuration.</p>
+<hr>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>PCB design requires careful planning of both hardware and firmware integration  </li>
+<li>Power distribution and grounding significantly impact system stability  </li>
+<li>Small design errors can lead to major debugging challenges  </li>
+<li>Iterative testing is essential to achieving a functional design</li>
+</ul>
+<p>Gerber Files Can be found in this Zip ( Gerbers_V2_zip.zip )</p>
 
 
 
