@@ -86,4 +86,4 @@ Testing revealed the importance of validating both electrical connections and so
 - Small design errors can lead to major debugging challenges  
 - Iterative testing is essential to achieving a functional design
 
-Gerber Files Can be found in this (*Zip*)(Gerbers_V2_zip.zip)
+Gerber Files can be found in this [*zip*](Gerbers_V2_zip.zip)
