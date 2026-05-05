@@ -54,7 +54,7 @@ title: Component Selection Example
 
 **Choice:** Option 1:Adafruit VL53L4CX Time of Flight Distance Sensor
 
-**Rationale:** The VL534CX is made for long range Time of flight and  displays accurate measurements up to 6m with a 18 deggree Field of View. This greatly checks off the requirement of the team needing a sensor that can see at least beyond 2m. 
+**Rationale:** The VL534CX is made for long range Time of flight and displays accurate measurements up to 6m with a 18 deggree Field of View. This greatly checks off the requirement of the team needing a sensor that can see at least beyond 2m. As well as the breakoutboard being easier to implement into my surface mount PCB design then the small sensor itself. 
 
 
 **External Microcontroller Module**
@@ -89,7 +89,7 @@ title: Component Selection Example
 
 **Choice:** Option 1: ESP32
 
-**Rationale:** The ESP32 offers faster intergration due to broad example code availability along with built in serial/wifi features. The PIC on the other hand is a reliable platform that aligns smoothly with the course but slightly lower level functionality creating potential longer time for debugging, printing, logging and quick iteration, with MPLab toolchain commonly creating issues. 
+**Rationale:** The ESP32 offers faster intergration due to broad example code availability along with built in serial/wifi features. The PIC on the other hand is a reliable platform that aligns smoothly with the course but slightly lower level functionality creating potential longer time for debugging, printing, logging and quick iteration, with MPLab toolchain commonly creating issues. While the S3 ESP32 would have been better for the class constraints due to my surface mount PCB having traces in the antenna zone of the ESP it is justified to use the Dev Kit version to bypass interference issues. 
 
 
 
@@ -138,7 +138,7 @@ title: Component Selection Example
 
 **Choice:** Option 1: Share 5V rail and local buck converter to 3.3V with LM2575T
 
-**Rationale:** I choose to use a shared 5V supply with a local 3.3V regulator on the distance sensor subsystem. This minimizes the system wiring complexity while providing clean stable power for the ESP32 and ToF Sensor
+**Rationale:** I choose to use a shared 5V supply with a local 3.3V regulator on the distance sensor subsystem. This minimizes the system wiring complexity while providing clean stable power for the ESP32 and ToF Sensor.
 
 
 # Component Selection
@@ -153,7 +153,7 @@ title: Component Selection Example
 | Communication | UART | Simple and reliable for system integration |
 
 ## Design Justification
-The ESP32 was selected due to its ability to handle both real-time sensor processing and communication simultaneously. The VL53L4CX provides accurate distance measurements critical for obstacle detection.
+The ESP32 was selected due to its ability to handle both real-time sensor processing and communication simultaneously. The VL53L4CX provides accurate distance measurements critical for obstacle detection. The MB102 was used later in testing when the LM2575T would output voltage spikes occoasionally. 
 
 The combination ensures a balance between performance, cost, and ease of integration.
 
