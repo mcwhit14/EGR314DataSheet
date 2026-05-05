@@ -14,7 +14,7 @@ However, not everything was fully optimized. Some components in my original desi
 - Double check ESP32 pin mappings before routing anything  
 - Make sure your voltage regulator setup is correct and stable  
 - Use simple test code first (like scanning or printing values)  
-- Don’t assume the sensor is broken — check wiring and power first  
+- Don’t assume the sensor is broken check wiring and power first  
 - Flashing issues are common, so verify boot mode and connections early  
 - Keep things simple at the start and build up slowly  
 - Add more test points and auxiliary pins than you think you need  
